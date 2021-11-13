@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Weather</title>
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="universal">
+      <div class="navigation-bar">
+        <div class="logo">
+          <img class="cloud-nav" src="cloud.png" height="50px" alt="" />
+          <h1 class="local-weather">Local Weather</h1>
+        </div>
+        <div class="color-mode">
+          <button class="light">Light</button>
+          <button class="dark">Dark</button>
+        </div>
+      </div>
+      <div class="title-page">
+        <div class="title">
+          <img src="cloud gray.png" height="300px" alt="" />
+          <div>
+            <h1 class="title-info">
+              A Simple weather reporting<br />
+              application
+            </h1>
+            <h2 class="powered">Powered By OpenWeather</h2>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="search-info">
+          <input
+            class="search-field"
+            type="text"
+            placeholder="Enter location, i.e: Karachi PK (space between)"
+          />
+          <button class="search-button">Search!</button>
+          <p class="search-error">
+            Unable to get data. Please make sure to no commas (just use space)
+            i.e Texas USA
+          </p>
+        </div>
+      </div>
+      <div class="not-working">
+        <a
+          class="btn-notworking"
+          href="https://localweatherap.netlify.app/contactus"
+          >Not working?</a
+        >
+      </div>
+      <div class="unit-btn">
+        <div class="btn-container">
+          <button class="btn--unit btn--metric">Metric</button>
+          <button class="btn--unit btn--imperial">Imperial</button>
+        </div>
+      </div>
+      <div class="data-page">
+        <div class="data-info">
+          <p class="date">Jan 18 , 12:00</p>
+          <p class="country">Karachi , PK</p>
+          <div class="temp-class">
+            <img
+              class="thermometer"
+              src="thermometer.png"
+              height="200px"
+              alt=""
+            />
+            <p class="temperature">30°C</p>
+          </div>
+          <p class="feel">Feels like 22°C. Haze. Light breeze</p>
+          <div class="extra-info-flex">
+            <p class="humidity">Humidity: 10%</p>
+            <p class="pressure">Pressure: 1013Pa</p>
+          </div>
+          <p class="visibility">Visibility: 5.0km</p>
+          <div id="map"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="footer-content">
+            <div class="apis">
+              <h1 class="api-library">API's / Libraries</h1>
+              <a
+                href="https://openweathermap.org/"
+                target="_blank"
+                class="open-w link"
+                >Open Weather</a
+              >
+              <a
+                href="https://leafletjs.com/"
+                target="_blank"
+                class="leaflet link"
+                >Leaflet</a
+              >
+            </div>
+            <div class="about">
+              <h1 class="about-heading">About</h1>
+              <p class="about-text">
+                LocalWeather is an application Inspired by OpenWeather. It is
+                only made as a project. All API's have been linked to ensure
+                credit.
+              </p>
+            </div>
+          </div>
+          <div class="link-area">
+            <div class="links">
+              <a
+                href="https://openweathermap.org/current"
+                class="api"
+                target="_blank"
+                >API</a
+              >
+              <a
+                href="https://www.linkedin.com/in/mustafapanhwar/"
+                class="linkedin linkedin1"
+                target="_blank"
+              >
+                <img src="in.png" alt="" height="50px"
+              /></a>
+              <a
+                class="github github1"
+                href="https://github.com/MustafaAP"
+                target="_blank"
+              >
+                <img src="git.png" alt="github" height="30px"
+              /></a>
+              <a
+                class="twitter twitter1"
+                href="https://twitter.com/horuken"
+                target="_blank"
+              >
+                <img src="twitter.png" height="30px" alt=""
+              /></a>
+              <a
+                class="facebook facebook1"
+                href="https://www.facebook.com/profile.php?id=100015520680271"
+                target="_blank"
+              >
+                <img src="fb.png" height="30px" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="copyright">© 2021 - Mustafa Panhwar</div>
+        </div>
+      </footer>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

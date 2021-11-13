@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="universal">
+      <div class="navigation-bar">
+        <div class="logo">
+          <img class="cloud-nav" src="cloud.png" height="50px" alt="" />
+          <h1 class="local-weather">Local Weather</h1>
+        </div>
+        <div class="links">
+          <a
+            href="https://openweathermap.org/current"
+            class="api"
+            target="_blank"
+            >API</a
+          >
+          <a
+            href="https://www.linkedin.com/in/mustafapanhwar/"
+            class="linkedin"
+            target="_blank"
+          >
+            <img src="in.png" alt="" height="50px"
+          /></a>
+          <a class="github" href="https://github.com/MustafaAP" target="_blank">
+            <img src="git.png" alt="github" height="30px"
+          /></a>
+        </div>
+      </div>
+      <div class="body-page">
+        <div class="form-page">
+          <h1 class="contact-us">contact us</h1>
+          <form
+            action="https://formsubmit.co/mustafaahmed3401@gmail.com"
+            method="POST"
+            class="form"
+          >
+            <input
+              class="first-name size"
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://localweatherap.netlify.app/thanks.html"
+            />
+            <input
+              class="last-name size"
+              type="text"
+              name="lastname"
+              placeholder="Last name"
+              required
+            />
+            <br />
+            <input
+              class="email size"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <br />
+            <input
+              class="text size"
+              type="text"
+              name="text"
+              placeholder="Your Message"
+              required
+            />
+            <br />
+            <button class="form-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="footer-content">
+            <div class="apis">
+              <h1 class="api-library">API's / Libraries</h1>
+              <a
+                href="https://openweathermap.org/"
+                target="_blank"
+                class="open-w link"
+                >Open Weather</a
+              >
+              <a
+                href="https://leafletjs.com/"
+                target="_blank"
+                class="leaflet link"
+                >Leaflet</a
+              >
+            </div>
+            <div class="about">
+              <h1 class="about-heading">About</h1>
+              <p class="about-text">
+                LocalWeather is an application Inspired by OpenWeather. It is
+                only made as a project. All API's have been linked to ensure
+                credit.
+              </p>
+            </div>
+          </div>
+          <div class="link-area">
+            <div class="links">
+              <a
+                href="https://openweathermap.org/current"
+                class="api"
+                target="_blank"
+                >API</a
+              >
+              <a
+                href="https://www.linkedin.com/in/mustafapanhwar/"
+                class="linkedin linkedin1"
+                target="_blank"
+              >
+                <img src="in.png" alt="" height="50px"
+              /></a>
+              <a
+                class="github github1"
+                href="https://github.com/MustafaAP"
+                target="_blank"
+              >
+                <img src="git.png" alt="github" height="30px"
+              /></a>
+              <a
+                class="twitter twitter1"
+                href="https://twitter.com/horuken"
+                target="_blank"
+              >
+                <img src="twitter.png" height="30px" alt=""
+              /></a>
+              <a
+                class="facebook facebook1"
+                href="https://www.facebook.com/profile.php?id=100015520680271"
+                target="_blank"
+              >
+                <img src="fb.png" height="30px" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="copyright">© 2021 - Mustafa Panhwar</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
