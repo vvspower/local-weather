@@ -1,6 +1,6 @@
 # local-weather
 
-A weather application made using Javascript
+A weather application made using Javascript, HTML and CSS
 
 
 https://localweatherap.netlify.app/
